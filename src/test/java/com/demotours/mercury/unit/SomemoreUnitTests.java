@@ -1,37 +1,34 @@
 package com.demotours.mercury.unit;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class UnitTests  {
-
+public class SomemoreUnitTests {
 	@BeforeClass
 	public void setup(){
-		System.out.println("setup-unit");
+		System.out.println("setup-somemoreunit");
+	}
+	@Test
+	public void firstTest(){
+		System.out.println("somemoreunit-firsttest");
 	}
 	@Test(groups={"smoke"})
-	public void firstTest(){
-		Assert.assertFalse(true);
-		System.out.println("unit-firsttest");
-	}
-	@Test(groups={"regression"})
 	public void secondTest(){
-		System.out.println("unit-secondtest");
+		System.out.println("somemoreunit-secondtest");
 	}
 	@AfterClass
 	public void cleanup(){
-		System.out.println("cleanup-unit");
+		System.out.println("cleanup-somemoreunit");
 	}
 	@BeforeMethod
 	public void beforeMethod(){
-		System.out.println("unit-beforemethod");
+		System.out.println("somemoreunit-beforemethod");
 	}
 	@AfterMethod
 	public void afterMethod(){
-		System.out.println("unit-aftermethod");
+		System.out.println("somemoreunit-aftermethod");
 	}
 }

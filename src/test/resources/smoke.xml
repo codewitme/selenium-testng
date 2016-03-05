@@ -7,7 +7,6 @@
       <groups>
       <define name="smoke-regression">
       <include name="smoke"/>
-      <include name="regression"/>
       </define>
          <run>
             <include name="smoke-regression"/>

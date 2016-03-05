@@ -40,6 +40,8 @@ public class Hooks {
 	@AfterGroups(groups={"smoke"})
 	public void afterGroup(){
 		System.out.println("cleanup-afterGroup");
+		driver.close();
+		driver.quit();
 	}
 	
 	

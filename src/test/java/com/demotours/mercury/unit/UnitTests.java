@@ -13,7 +13,7 @@ public class UnitTests  {
 	public void setup(){
 		System.out.println("setup-unit");
 	}
-	@Test(groups={"smoke"})
+	@Test(groups={"x"})
 	public void firstTest(){
 		Assert.assertFalse(true);
 		System.out.println("unit-firsttest");
